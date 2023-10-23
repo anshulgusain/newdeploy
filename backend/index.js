@@ -52,7 +52,7 @@ app.post("/login",async(req,res)=>{
 
 // Crud api part
 
-app.use(authenticate)
+// app.use(authenticate)
 
 app.get("/todos",async (req,res)=>{
 const data=await TodoModel.find(req.query)
